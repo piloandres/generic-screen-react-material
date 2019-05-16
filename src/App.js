@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PantallaGenerica from './components/PantallaGenerica/PantallaGenerica';
+import Class from './models/Class';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PantallaGenerica classes={MYCLASSES}/>
   );
 }
+
+const MYCLASSES = [
+  "",
+  new Class('CD_DocumentoIdentificacionCliente', 'Documento de Identificacion del cliente'),
+  new Class('CD_DocumentoConocimientoCliente', 'Conocimiento Cliente'),
+  new Class('CD_Acta','Acta')
+]
 
 export default App;
