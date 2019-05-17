@@ -32,7 +32,7 @@ class PropertySelector extends React.Component {
     });
 
     return (
-      <Select value={this.props.selectValue} 
+      <Select value={this.props.property} 
         onChange={this.handlePropertyChange}
         autoWidth={false}
         >
@@ -41,3 +41,5 @@ class PropertySelector extends React.Component {
     );
   }
 }
+
+export default PropertySelector;
